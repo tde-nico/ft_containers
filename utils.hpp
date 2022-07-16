@@ -15,24 +15,24 @@ namespace ft
 
 	// is_integral
 
-	template <class _Tp>	struct is_integral					: public std::false_type {};
-	template <>				struct is_integral<bool>			: public std::true_type {};
-	template <>			struct is_integral<char>				: public std::true_type {};
-	template <>			struct is_integral<signed char>			: public std::true_type {};
-	template <>			struct is_integral<unsigned char>		: public std::true_type {};
-	template <>			struct is_integral<wchar_t>				: public std::true_type {};
-	template <>			struct is_integral<char16_t>			: public std::true_type {};
-	template <>			struct is_integral<char32_t>			: public std::true_type {};
-	template <>			struct is_integral<short>				: public std::true_type {};
-	template <>			struct is_integral<unsigned short> 		: public std::true_type {};
-	template <>			struct is_integral<int>					: public std::true_type {};
-	template <>			struct is_integral<unsigned int>		: public std::true_type {};
-	template <>			struct is_integral<long>				: public std::true_type {};
-	template <>			struct is_integral<unsigned long>		: public std::true_type {};
-	template <>			struct is_integral<long long>			: public std::true_type {};
-	template <>			struct is_integral<unsigned long long>	: public std::true_type {};
-	template <>			struct is_integral<__int128_t>			: public std::true_type {};
-	template <>			struct is_integral<__uint128_t>			: public std::true_type {};
+	template <class _Tp>	struct is_integral					: public std::__false_type {};
+	template <>				struct is_integral<bool>			: public std::__true_type {};
+	template <>			struct is_integral<char>				: public std::__true_type {};
+	template <>			struct is_integral<signed char>			: public std::__true_type {};
+	template <>			struct is_integral<unsigned char>		: public std::__true_type {};
+	template <>			struct is_integral<wchar_t>				: public std::__true_type {};
+	template <>			struct is_integral<__char16_t>			: public std::__true_type {};
+	template <>			struct is_integral<__char32_t>			: public std::__true_type {};
+	template <>			struct is_integral<short>				: public std::__true_type {};
+	template <>			struct is_integral<unsigned short> 		: public std::__true_type {};
+	template <>			struct is_integral<int>					: public std::__true_type {};
+	template <>			struct is_integral<unsigned int>		: public std::__true_type {};
+	template <>			struct is_integral<long>				: public std::__true_type {};
+	template <>			struct is_integral<unsigned long>		: public std::__true_type {};
+	template <>			struct is_integral<long long>			: public std::__true_type {};
+	template <>			struct is_integral<unsigned long long>	: public std::__true_type {};
+	template <>			struct is_integral<__int128_t>			: public std::__true_type {};
+	template <>			struct is_integral<__uint128_t>			: public std::__true_type {};
 
 	// equal
 

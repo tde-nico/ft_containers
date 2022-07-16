@@ -32,11 +32,13 @@ fclean: clean
 
 re: fclean $(NAME) $(NAME2)
 
-run:
-	./$(NAME) 
-	./$(NAME2)
+run: all
+	./$(NAME) 10469420
+	./$(NAME2) 10469420
 
-test:
+test: all
+	./$(NAME) 1234 > $(OUT)
+	./$(NAME2) 1234 > $(OUT2)
 	diff $(OUT) $(OUT2)
 
 
