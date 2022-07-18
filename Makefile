@@ -6,8 +6,8 @@ SRCS	= main.cpp
 SRCS2	= test.cpp
 OBJ		= $(SRCS:.cpp=.o)
 OBJ2	= $(SRCS2:.cpp=.o)
-OUT		= main_out.txt
-OUT2	= test_out.txt
+OUT		= out_main.txt
+OUT2	= out_test.txt
 
 NAME	= containers
 NAME2	= containers2
