@@ -116,14 +116,19 @@ int main(int argc, char** argv) {
 		std::cout << "v1: " << *t1 << std::endl;
 
 	std::cout << "\n\n\tERASE\n" << std::endl;
-	v2.erase(++(++(++v2.begin())), --(--(--v2.end())));
+	v2.erase(v2.begin());
+	std::cout << "size : " << v2.size() << std::endl;
+	std::cout << "max_size : " << v2.max_size() << std::endl;
+	for(t1 = v2.begin(); t1 != v2.end(); ++t1)
+		std::cout << "v2: " << *t1 << std::endl;
+	v2.erase(++(v2.begin()), ++(++(v2.begin())));
 	std::cout << "size : " << v2.size() << std::endl;
 	std::cout << "max_size : " << v2.max_size() << std::endl;
 	for(t1 = v2.begin(); t1 != v2.end(); ++t1)
 		std::cout << "v2: " << *t1 << std::endl;
 	
 	std::cout << "\n\n\tOPERATORS\n" << std::endl;
-	std::cout << "v2 at(5) = " << v2.at(5) << std::endl;
+	std::cout << "v2 at(5) = " << v2.at(2) << std::endl;
 	std::cout << "v2 [9] = " << v2[9] << std::endl;
 	std::cout << "v2 front = " << v2.front() << std::endl;
 	std::cout << "v2 back = " << v2.back() << std::endl;

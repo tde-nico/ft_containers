@@ -36,6 +36,9 @@ run: all
 	./$(NAME) 10469420
 	./$(NAME2) 10469420
 
+diif_main:
+	diff $(SRCS) $(SRCS2)
+
 test: all
 	./$(NAME) 1234 > $(OUT)
 	./$(NAME2) 1234 > $(OUT2)
